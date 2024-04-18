@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.pooproyectointegrador.SecondaryController">
+   <children>
+      <SplitPane dividerPositions="0.5" prefHeight="359.0" prefWidth="501.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="-5.0" layoutY="-1.0" prefHeight="350.0" prefWidth="247.0">
+                     <children>
+                        <Button fx:id="andir__button" mnemonicParsing="false" onAction="#cambiarAnadir" prefHeight="26.0" prefWidth="251.0" text="Anadir" />
+                        <Button fx:id="mostrar__btn" mnemonicParsing="false" onAction="#mostrar" prefHeight="26.0" prefWidth="262.0" text="Mostrar" />
+                        <Button fx:id="eliminar__btn" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="260.0" text="Eliminar" />
+                        <Button fx:id="actualizar__btn" mnemonicParsing="false" onAction="#actualizar" prefHeight="26.0" prefWidth="248.0" text="Actualizar" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Pane fx:id="paneAnadir" layoutX="-3.0" layoutY="-1.0" prefHeight="351.0" prefWidth="247.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="349.0" prefWidth="247.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label text="ID" />
+                              <TextField fx:id="idGuardar">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="Nombre">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="nombreGuardar">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Label text="Precio">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="precioGuardar">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <Button fx:id="guardarBtn" mnemonicParsing="false" onAction="#guardar" text="Guardar">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>
